@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="src\classes\team.ts" />
     <None Remove="src\home\home.ts" />
     <None Remove="src\roster\roster.ts" />
   </ItemGroup>
@@ -21,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="src\classes\team.ts" />
     <TypeScriptCompile Include="src\home\home.ts" />
     <TypeScriptCompile Include="src\roster\roster.ts" />
   </ItemGroup>

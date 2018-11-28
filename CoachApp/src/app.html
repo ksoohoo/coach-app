@@ -9,6 +9,14 @@
                 <a repeat.for="nav of router.routes" class="nav-item nav-link ${nav.isActive ? 'active' : ''}" href.bind="'#' + nav.route">${nav.title}</a>
             </div>
         </div>
+        <form class="form-inline">
+            <div class="form-group">
+                <select class="form-control mr-sm-2" value.bind="selectedTeam">
+                    <option model.bind="null">Choose Team...</option>
+                    <option repeat.for="team of teams" model.bind="team">${team.name}</option>
+                </select>
+            </div>
+        </form>
     </nav>
     <div class="container">
         <router-view></router-view>
